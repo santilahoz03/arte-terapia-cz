@@ -7,24 +7,97 @@
 <title>Tvůj přístup — Příručka Arteterapie</title>
 <style>
   html, body { margin:0; background:#FAF7F2; color:#2B2522; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  .wrap { max-width:560px; margin:0 auto; padding:64px 20px; text-align:center; }
-  .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:#EFE6DA; padding:6px 12px; border-radius:99px; }
-  h1 { font-size:28px; line-height:1.2; margin:18px 0 10px; }
-  p { font-size:17px; line-height:1.55; color:#5B514B; }
-  .card { background:#fff; border:1px solid #EAE0D5; border-radius:16px; padding:24px 20px; margin-top:28px; }
-  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#1F9D55; margin-right:8px; animation:p 1.6s infinite; }
-  @keyframes p { 50% { opacity:.3; } }
-  @media (prefers-reduced-motion: reduce) { .dot { animation:none; } }
+  .wrap { max-width:600px; margin:0 auto; padding:48px 20px 64px; }
+  .badge { display:inline-block; font-size:12px; letter-spacing:.08em; text-transform:uppercase; background:#EFE6DA; padding:6px 12px; border-radius:99px; color:#5B514B; }
+  h1 { font-size:28px; line-height:1.2; margin:16px 0 8px; }
+  .subtitle { font-size:17px; color:#5B514B; margin:0 0 36px; }
+  .section-label { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:#9A8880; margin:0 0 12px; }
+  .product-card { background:#fff; border:1px solid #EAE0D5; border-radius:14px; padding:20px 20px 16px; margin-bottom:12px; display:flex; align-items:flex-start; gap:16px; }
+  .product-icon { font-size:28px; flex-shrink:0; margin-top:2px; }
+  .product-info { flex:1; min-width:0; }
+  .product-name { font-size:16px; font-weight:600; margin:0 0 4px; }
+  .product-desc { font-size:13px; color:#5B514B; margin:0 0 12px; line-height:1.4; }
+  .btn-download { display:inline-block; background:#2B6CB0; color:#fff; text-decoration:none; font-size:13px; font-weight:600; padding:9px 18px; border-radius:8px; letter-spacing:.02em; }
+  .btn-download:hover { background:#1A4F8A; }
+  .divider { height:1px; background:#EAE0D5; margin:28px 0; }
+  .footer { font-size:13px; color:#9A8880; text-align:center; }
+  @media (max-width:480px) {
+    .product-card { flex-direction:column; gap:10px; }
+  }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <span class="badge">Nákup potvrzen</span>
+    <span class="badge">Nákup potvrzen ✓</span>
     <h1>Příručka Arteterapie</h1>
-    <p>Děkujeme! Právě dokončujeme přípravu tvého materiálu. Tato stránka bude brzy aktualizována se všemi tvými soubory.</p>
-    <div class="card">
-      <p><span class="dot"></span><strong>Ulož si tento odkaz</strong></p>
-      <p>Je to tvůj celoživotní přístup. Vrať se za pár hodin a najdeš hlavní produkt i všechny bonusy.</p>
+    <p class="subtitle">Tvůj přístup ke všem materiálům je připraven. Ulož si tuto stránku pro budoucí použití.</p>
+
+    <p class="section-label">Hlavní produkt</p>
+
+    <div class="product-card">
+      <div class="product-icon">🎨</div>
+      <div class="product-info">
+        <div class="product-name">Příručka Arteterapeutických Cvičení</div>
+        <div class="product-desc">100 cvičení arteterapie pro práci s emocemi, stresem a osobním rozvojem.</div>
+        <a class="btn-download" href="pdfs/oto1-denik-transformace.pdf" download>⬇ Stáhnout PDF</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <p class="section-label">Bonusy z upsellů (pokud byly zakoupeny)</p>
+
+    <div class="product-card">
+      <div class="product-icon">📓</div>
+      <div class="product-info">
+        <div class="product-name">Deník Transformace</div>
+        <div class="product-desc">Strukturovaný deník pro sledování pokroku v arteterapeutické praxi.</div>
+        <a class="btn-download" href="pdfs/oto1-denik-transformace.pdf" download>⬇ Stáhnout PDF</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icon">🛡️</div>
+      <div class="product-info">
+        <div class="product-name">Příručka pro Krizové Momenty</div>
+        <div class="product-desc">Techniky a nástroje pro zvládání krizových situací pomocí arteterapie.</div>
+        <a class="btn-download" href="pdfs/oto2-prirucka-pro-krizove-momenty.pdf" download>⬇ Stáhnout PDF</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icon">👨‍👩‍👧</div>
+      <div class="product-info">
+        <div class="product-name">Arteterapie pro Rodinu</div>
+        <div class="product-desc">Cvičení a aktivity pro práci s dětmi a rodinami pomocí arteterapie.</div>
+        <a class="btn-download" href="pdfs/oto3-arteterapie-pro-rodinu.pdf" download>⬇ Stáhnout PDF</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <p class="section-label">Order Bumps</p>
+
+    <div class="product-card">
+      <div class="product-icon">🚀</div>
+      <div class="product-info">
+        <div class="product-name">Startovní Plán 7 Dní</div>
+        <div class="product-desc">Plán prvních 7 dní s arteterapií — krok za krokem pro rychlý start.</div>
+        <a class="btn-download" href="pdfs/ob1-startovni-plan.pdf" download>⬇ Stáhnout PDF</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icon">📖</div>
+      <div class="product-info">
+        <div class="product-name">Deník Osvobození</div>
+        <div class="product-desc">Průvodce k uvolnění emocí a budování větší svobody skrze psaní a tvorbu.</div>
+        <a class="btn-download" href="pdfs/ob2-denik-osvobozeni.pdf" download>⬇ Stáhnout PDF</a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="footer">
+      Příručka Arteterapie · Doživotní přístup<br>
+      Problém s přístupem? Kontaktuj nás na: customersupport.santi@gmail.com
     </div>
   </div>
 </body>
